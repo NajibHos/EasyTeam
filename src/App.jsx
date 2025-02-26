@@ -47,7 +47,6 @@ const AuthRoutes = () => {
         <Route element={<PrivateRoute allowedRoles={['Admin']} />}>
           <Route path="/admin/dashboard" element={<AdminDashboard />} />
           <Route path="/admin/add-task" element={<AddTaskPage />} />
-          <Route path="/admin/add-member" element={<NewMember />} />
           <Route path="/admin/member-progress"
            element={<MemberProgressPage />} />
         </Route>
