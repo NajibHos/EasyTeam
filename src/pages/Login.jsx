@@ -37,7 +37,7 @@ const Login = () => {
         navigate('/member/dashboard')
       }
     }
-    
+
   }, [user, userRole])
 
   const handleForm = async (ev) => {
@@ -60,7 +60,7 @@ const Login = () => {
 
   return (
 
-    <div className="h-[120vh] md:max-2xl:h-[100vh] w-full flex
+    <div className="h-[100vh] w-full flex
      justify-center items-center">
 
       <div className="h-full w-[80%] flex flex-col justify-center
