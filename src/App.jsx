@@ -8,7 +8,6 @@ import Login from './pages/Login';
 import AdminDashboard from './pages/AdminDashboard';
 import MemberDashboard from './pages/MemberDashboard';
 import AddTaskPage from './pages/AddTaskPage';
-import NewMember from './pages/NewMember';
 import MemberProgressPage from './pages/MemberProgressPage';
 import MemberProfile from './pages/MemberProfile';
 import MemberTaskView from './pages/MemberTaskView';
