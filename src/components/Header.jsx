@@ -22,7 +22,7 @@ const Header = () => {
         </div>
 
         <div className='h-full w-auto flex justify-end items-center
-        gap-6 lg:max-2xl:gap-8'>
+        gap-4 lg:max-2xl:gap-8'>
 
           {
             user ? (
@@ -150,8 +150,12 @@ const Header = () => {
                               </span>
 
                               <div>
-                                <i className='pi pi-github text-2xl
-                                 text-zinc-800'></i>
+                                <a
+                                href="https://github.com/NajibHos/EasyTeam"
+                                target="_blank">
+                                  <i className='pi pi-github text-2xl
+                                 text-zinc-950 hover:text-zinc-600'></i>
+                                   </a>
                               </div>
 
                            </>
