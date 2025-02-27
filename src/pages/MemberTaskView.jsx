@@ -78,7 +78,7 @@ const MemberTaskView = () => {
         </div>
 
         <div className="h-auto w-full flex justify-start items-center
-        gap-8">
+        gap-6 sm:max-2xl:gap-8">
 
           <span className='hidden lg:max-2xl:block'>
           <Button label='New' icon='pi pi-plus'
