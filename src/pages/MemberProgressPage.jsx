@@ -134,9 +134,9 @@ const MemberProgressPage = () => {
             </h2>
           </div>
 
-          <div className="w-full flex flex-col sm:max-2xl:flex-row
-           justify-center items-center sm:max-2xl:justify-between
-           gap-10 sm:max-2xl:gap-0">
+          <div className="w-full flex flex-col lg:max-2xl:flex-row
+           justify-center items-center lg:max-2xl:justify-between
+           gap-10 lg:max-2xl:gap-0">
 
             <div className="h-auto w-full sm:max-2xl:w-[20%]
              flex justify-center items-center">
