@@ -155,7 +155,7 @@ const MemberDashboard = () => {
   }
 
   return (
-    <div className="h-[240vh] sm:max-2xl:h-[130vh] w-full flex
+    <div className="h-[200vh] sm:max-2xl:h-[130vh] w-full flex
      justify-center items-center">
       <div className="h-full w-[80%] flex flex-col justify-center
       items-center gap-20">
