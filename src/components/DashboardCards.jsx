@@ -4,7 +4,7 @@ const DashboardCards = ({data}) => {
   console.log('fix');
 
   return (
-    <div className="h-[140px] w-[80%] md:max-lg:w-[160px]
+    <div className="h-[140px] w-[85%] md:max-lg:w-[160px]
      lg:max-2xl:w-[220px] flex flex-col
      justify-center items-center gap-4 p-8 border-2 border-zinc-200
      rounded-2xl">
