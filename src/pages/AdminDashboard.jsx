@@ -51,7 +51,8 @@ const AdminDashboard = () => {
   };
 
   return (
-    <div className="h-[95vh] w-full flex justify-center items-center">
+    <div className="h-[85vh] sm:max-2xl:h-[95vh] w-full flex
+     justify-center items-center">
       <div className="h-full w-[80%] flex flex-col
        justify-center items-center gap-16">
 
