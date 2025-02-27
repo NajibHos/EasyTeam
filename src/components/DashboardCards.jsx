@@ -1,7 +1,6 @@
 
 /* eslint-disable react/prop-types */
 const DashboardCards = ({data}) => {
-  console.log('fix');
 
   return (
     <div className="h-[140px] w-[85%] md:max-lg:w-[160px]

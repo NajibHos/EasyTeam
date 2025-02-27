@@ -4,7 +4,6 @@ import { useAuth } from '../context/AuthContext';
 /* eslint-disable react/prop-types */
 const PrivateRoute = ({ allowedRoles }) => {
   const { user, userRole } = useAuth();
-  console.log('fix');
 
   // If user is not logged in, redirect to login page
   if (!user) return <Navigate to="/login" replace />;

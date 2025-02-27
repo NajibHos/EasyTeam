@@ -1,7 +1,7 @@
 
 
 const Footer = () => {
-  console.log('fix');
+
   return (
     <div className="h-[20vh] w-full flex justify-center items-center">
       <div className="w-[80%] text-center">

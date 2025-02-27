@@ -1,7 +1,7 @@
 import { Skeleton } from 'primereact/skeleton';
 
 const SkeletonLoading = () => {
-  console.log('fix');
+
   return (
     <div className='h-[80vh] w-full flex justify-center items-center'>
       <div className='h-[70%] w-[80%] sm:max-2xl:w-[50%] flex flex-col

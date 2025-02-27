@@ -3,7 +3,6 @@ import { useState } from 'react';
 
 /* eslint-disable react/prop-types */
 const LoginDetailsCard = ({data}) => {
-  console.log('fix');
 
   const [copyStatus, setCopyStatus] = useState({
     email: false,

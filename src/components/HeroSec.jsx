@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 
 
 const HeroSec = () => {
-  console.log('fix');
+
   return (
     <div className="h-[80vh] w-full flex
      justify-center items-center">

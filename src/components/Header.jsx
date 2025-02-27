@@ -6,7 +6,6 @@ import { useAuth } from '../context/AuthContext';
 const Header = () => {
 
   const { user, userRole, logout } = useAuth();
-  console.log('fix');
 
   return (
     <div className='h-[15vh] md:max-2xl:h-[20vh] w-full flex
