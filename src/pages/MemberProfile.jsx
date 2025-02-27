@@ -30,7 +30,7 @@ const MemberProfile = () => {
       try {
         const data = await databases.getDocument(
           import.meta.env.VITE_APPWRITE_DATABASE_ID,
-          import.meta.env.VITE_APPWRITE_DATABASE_COLLECTION_TASKS_ID,
+          import.meta.env.VITE_APPWRITE_DATABASE_COLLECTION_MEMBERS_ID,
           "67b561940033191dc4a2"
         );
 
@@ -96,7 +96,7 @@ const MemberProfile = () => {
   }
 
   return (
-    <div className={`${isEditing ? 'h-[100vh]' : 'h-[120vh] sm:max-2xl:h-[80vh]'}
+    <div className={`${isEditing ? 'h-[90vh] sm:max-2xl:h-[100vh]' : 'h-[90vh] sm:max-2xl:h-[80vh]'}
       w-full flex justify-center items-center`}>
       <div className='h-[80%] w-[80%] flex flex-col justify-center
       items-center gap-16'>
@@ -208,9 +208,9 @@ const MemberProfile = () => {
                 text-4xl"></i>
               </div>
              </div>
-            <div className="h-auto w-full sm:max-2xl:w-[70%] flex
-            flex-col sm:max-2xl:flex-row justify-center
-             sm:max-2xl:justify-between items-center flex-wrap">
+            <div className="h-auto w-full lg:max-2xl:w-[70%] flex
+            flex-col lg:max-2xl:flex-row justify-center
+             lg:max-2xl:justify-between items-center flex-wrap">
 
               <div className="h-auto w-full sm:max-2xl:w-[40%]
                flex flex-col gap-2 mb-6 sm:max-2xl:mb-0">
