@@ -86,7 +86,8 @@ const AddTaskPage = () => {
 
 
   return (
-    <div className="h-[130vh] w-full flex justify-center items-center">
+    <div className="h-[100vh] sm:max-2xl:h-[130vh] w-full
+     flex justify-center items-center">
     <div className="h-full w-full flex flex-col justify-center
     items-center gap-16 md:max-lg:border">
       <div className="h-auto w-full flex flex-col gap-6 text-center">
