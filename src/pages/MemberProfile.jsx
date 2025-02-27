@@ -96,7 +96,7 @@ const MemberProfile = () => {
   }
 
   return (
-    <div className={`${isEditing ? 'h-[90vh] sm:max-2xl:h-[100vh]' : 'h-[90vh] sm:max-2xl:h-[80vh]'}
+    <div className={`${isEditing ? 'h-[90vh] sm:max-2xl:h-[100vh]' : 'h-[100vh] sm:max-2xl:h-[80vh]'}
       w-full flex justify-center items-center`}>
       <div className='h-[80%] w-[80%] flex flex-col justify-center
       items-center gap-16'>
