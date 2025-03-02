@@ -55,7 +55,7 @@ const MemberDashboard = () => {
       count: 0
     },
     {
-      title: 'In-progress',
+      title: 'In Progress',
       count: 0
     },
     {
