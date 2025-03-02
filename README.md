@@ -3,19 +3,16 @@ EasyTeam is a modern team management system designed to streamline task assignme
 
 🌟 Features
 Admin Dashboard
-✅ Assign tasks to employees.
-✅ Manage employees and view individual progress.
-✅ Track completed, pending, and failed tasks.
-
+✅ Assign tasks to employees
+✅ Manage employees and view individual progress
+✅ Track completed, pending, and failed tasks
 Employee Dashboard
-✅ View assigned tasks.
-✅ Update task status (In Progress, Completed, Failed).
-✅ Manage personal profile details.
-
+✅ View assigned tasks
+✅ Update task status (In Progress, Completed, Failed)
+✅ Manage personal profile details
 Authentication & Database
-🔒 Secure login for both Admin and Employees using Appwrite.
-📦 Appwrite database integration for real-time task updates.
-
+🔒 Secure login for both Admin and Employees using Appwrite
+📦 Appwrite database integration for real-time task updates
 🛠️ Tech Stack
 Frontend: React, Tailwind CSS, Prime React
 Backend: Appwrite
