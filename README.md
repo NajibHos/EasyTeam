@@ -2,7 +2,7 @@
 This project is built by Najib Hossain. Feel free to explore and learn from it, but redistributing or using it under a different name without proper credit is not allowed.
 
 If you are a recruiter viewing this project, feel free to contact me:
-📧 Email: najibhossn@gmail.com
+📧 Email: najibhossn@gmail.com 
 🌐 Portfolio: My Portfolio
 
 📩 Reporting Misuse
