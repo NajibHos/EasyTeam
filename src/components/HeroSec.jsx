@@ -5,7 +5,7 @@ import { Link } from "react-router-dom"
 const HeroSec = () => {
 
   return (
-    <div className="h-[80vh] w-full flex
+    <div className="h-[85vh] md:max-2xl:h-[80vh] w-full flex
      justify-center items-center">
 
       <div className="h-[80%] w-[80%] md:max-2xl:w-[60%] flex flex-col
