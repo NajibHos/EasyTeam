@@ -65,8 +65,8 @@ const MemberTaskView = () => {
 
 
   return (
-    <div className="h-[80vh] w-full flex justify-center
-    items-center">
+    <div className="h-[70vh] md:max-2xl:h-[80vh] w-full
+     flex justify-center items-center">
       <div className="h-[80%] w-[80%] flex flex-col justify-start
       items-start gap-8">
 
