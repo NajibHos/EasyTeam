@@ -76,7 +76,7 @@ const MemberProgressPage = () => {
       count: 0
     },
     {
-      title: 'Pending',
+      title: 'In-progress',
       count: 0
     },
     {
