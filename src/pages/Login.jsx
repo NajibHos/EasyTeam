@@ -38,7 +38,7 @@ const Login = () => {
       }
     }
 
-  }, [user, userRole])
+  }, [])
 
   const handleForm = async (ev) => {
 
