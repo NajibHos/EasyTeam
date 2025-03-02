@@ -98,7 +98,7 @@ const MemberDashboard = () => {
     try {
       await databases.updateDocument(
         import.meta.env.VITE_APPWRITE_DATABASE_ID,
-        import.meta.env.VITE_APPWRITE_DATABASE_COLLECTION_MEMBERS_ID,
+        import.meta.env.VITE_APPWRITE_DATABASE_COLLECTION_TASKS_ID,
        docID,
        {'status' : newStatus}
       );
@@ -155,7 +155,7 @@ const MemberDashboard = () => {
   }
 
   return (
-    <div className="h-[200vh] sm:max-2xl:h-[130vh] w-full flex
+    <div className="h-[190vh] md:max-2xl:h-[130vh] w-full flex
      justify-center items-center">
       <div className="h-full w-[80%] flex flex-col justify-center
       items-center gap-20">
