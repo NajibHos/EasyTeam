@@ -5,7 +5,7 @@ EasyTeam is a modern team management system designed to streamline task assignme
 🌟 Features
 Admin Dashboard:
   Assign tasks to employees.
-  Manage employees and view individual progress with track completed,    pending, and failed tasks.
+  Manage employees and view individual progress with track completed, pending, and failed tasks.
 
 Employee Dashboard:
   View assigned tasks.
@@ -45,9 +45,9 @@ Authentication & Database:
 ⚠️ License & Usage
   This project is built by Najib Hossain. Feel free to explore and learn  from it, but redistributing or using it under a different name without  proper credit is not allowed.
 
-  If you are a recruiter viewing this project, feel free to contact me at [najibhossn@gmail.com] or visit my portfolio: [https://portfolio-web-app-weld.vercel.app]
+  If you are a recruiter viewing this project, feel free to contact me at (email)[najibhossn@gmail.com] or visit my portfolio: [https://portfolio-web-app-weld.vercel.app]
 
 📩 Reporting Misuse
   If you find this project being misused without credit, please report it.
 
-🔗 Project by [Najib Hossain] | 🌐 [https://portfolio-web-app-weld.vercel.app]
+🔗 Project by Najib Hossain | 🌐 [https://portfolio-web-app-weld.vercel.app]
