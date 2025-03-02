@@ -51,13 +51,13 @@ const AdminDashboard = () => {
   };
 
   return (
-    <div className="h-[85vh] sm:max-2xl:h-[95vh] w-full flex
+    <div className="h-[80vh] md:max-2xl:h-[95vh] w-full flex
      justify-center items-center">
       <div className="h-full w-[80%] flex flex-col
        justify-center items-center gap-16">
 
       <div className="h-auto w-full text-center">
-        <h2 className="font-semibold font-poppins text-2xl
+        <h2 className="font-semibold font-poppins text-xl
         text-zinc-900">
           Admin Dashboard
         </h2>
