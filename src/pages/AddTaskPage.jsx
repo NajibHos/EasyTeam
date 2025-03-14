@@ -88,10 +88,11 @@ const AddTaskPage = () => {
   return (
     <div className="h-[100vh] md:max-2xl:h-[130vh] w-full
      flex justify-center items-center">
+    <Toast ref={toast} className="mx-10 sm:max-2xl:m-0" />
     <div className="h-full w-full flex flex-col justify-center
     items-center gap-16 md:max-lg:border">
-      <div className="h-auto w-full flex flex-col gap-6 text-center">
-        <Toast ref={toast} className="mx-10 sm:max-2xl:m-0" />
+      <div className="h-auto w-full flex justify-center items-center
+       text-center">
         <h2 className="font-semibold text-2xl font-poppins
         text-zinc-900">
           Add Task
