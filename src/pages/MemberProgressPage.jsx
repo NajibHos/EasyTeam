@@ -238,7 +238,7 @@ const MemberProgressPage = () => {
             </h2>
           </div>
           <div className="h-auto w-full flex justify-center items-center">
-            <DataTable value={tasksData} paginator rows={5}
+            <DataTable value={tasksData} paginator rows={4}
              className="w-full">
             <Column field="title" header="Task Name" sortable></Column>
             <Column field="status" header="Status" sortable></Column>
