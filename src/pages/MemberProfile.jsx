@@ -98,11 +98,11 @@ const MemberProfile = () => {
   return (
     <div className={`${isEditing ? 'h-[80vh] md:max-2xl:h-[100vh]' : 'h-[90vh] md:max-2xl:h-[60vh]'}
       w-full flex justify-center items-center`}>
+      <Toast ref={toast} className="mx-10 sm:max-2xl:m-0" />
       <div className='h-[80%] w-[80%] flex flex-col justify-center
       items-center gap-16'>
 
         <div className='h-auto w-full text-center'>
-         <Toast ref={toast} className="mx-10 sm:max-2xl:m-0" />
          <h2 className='text-zinc-800 font-semibold text-xl
          font-poppins'>
           {isEditing ? 'Edit Profile' : 'Profile Details'}
