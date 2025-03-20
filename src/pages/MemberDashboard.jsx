@@ -9,7 +9,6 @@ import { Query } from "appwrite";
 import { useNavigate } from 'react-router-dom';
 import SkeletonLoading from "../components/SkeletonLoading";
 
-export let taskID = '';
 
 const MemberDashboard = () => {
 
@@ -140,9 +139,8 @@ const MemberDashboard = () => {
           className="bg-zinc-900 text-white rounded-xl
           border-0 outline-0 active:outline-0 focus:outline-0"
           onClick={() => {
-            // console.log(rowData.$id);
-            taskID = rowData.$id;
-            navigate('/member/task-view');
+            // Passing data while navigating
+            navigate('/member/task-view', {state: {taskID: rowData.$id}});
           }
           }
         />
