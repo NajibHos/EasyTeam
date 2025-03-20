@@ -2,7 +2,7 @@ import DashboardCards from "../components/DashboardCards";
 import { useEffect, useState } from 'react';
 import { DataTable } from 'primereact/datatable';
 import { Column } from 'primereact/column';
-import { memberID, memberDocID } from "./AdminDashboard";
+import { useLocation } from "react-router-dom";
 import SkeletonLoading from "../components/SkeletonLoading";
 import { databases } from "../appwrite/appwrite";
 import { Query } from "appwrite";
@@ -19,6 +19,8 @@ const MemberProgressPage = () => {
     jobRole: ''
 
   });
+  const location = useLocation();
+  const { memberID, memberDocID } = location.state || {};
 
   const getTasks = async () => {
 
