@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { taskID } from './MemberDashboard';
+import { useLocation } from "react-router-dom";
 import { Button } from 'primereact/button';
 import { databases } from '../appwrite/appwrite';
 import SkeletonLoading from '../components/SkeletonLoading';
@@ -9,6 +9,8 @@ const MemberTaskView = () => {
 
   const [taskData, setTaskData] = useState([]);
   const [loading, setLoading] = useState(false);
+  const location = useLocation();
+  const { taskID } = location.state || {};
 
   // function to fetch task data
   const fetchTasks = async () => {
