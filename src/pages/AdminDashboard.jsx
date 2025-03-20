@@ -3,10 +3,6 @@ import { DataTable } from "primereact/datatable";
 import { Column } from "primereact/column";
 import { useNavigate } from 'react-router-dom';
 
-// exporting the variables with id's to fetch data
-export let memberID = '';
-export let memberDocID = '';
-
 const AdminDashboard = () => {
 
   const navigate = useNavigate();
@@ -41,9 +37,11 @@ const AdminDashboard = () => {
           className="bg-zinc-900 text-white font-poppins
           border-0 outline-0"
           onClick={() => {
-            memberID = rowData.id;
-            memberDocID = rowData.docID;
-            navigate('/admin/member-progress');
+            // Passing data while navigating
+            navigate(
+              '/admin/member-progress',
+              {state: {memberID: rowData.id, memberDocID: rowData.docID}}
+            );
           }}
         />
       </div>
