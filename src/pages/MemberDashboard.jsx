@@ -1,21 +1,21 @@
-import DashboardCards from "../components/DashboardCards";
+import { useAuth } from "../utils/AuthContext";
 import { useEffect, useState } from 'react';
-import { DataTable } from 'primereact/datatable';
-import { Column } from 'primereact/column';
-import { Button } from 'primereact/button';
-import { useAuth } from "../context/AuthContext";
 import { databases } from "../appwrite/appwrite";
 import { Query } from "appwrite";
 import { useNavigate } from 'react-router-dom';
+import DashboardCards from "../components/DashboardCards";
+import { DataTable } from 'primereact/datatable';
+import { Column } from 'primereact/column';
+import { Button } from 'primereact/button';
 import SkeletonLoading from "../components/SkeletonLoading";
 
 
 const MemberDashboard = () => {
 
   const { userID, userName } = useAuth();
+  const navigate = useNavigate();
   const [tasksData, setTasksData] = useState([]);
   const [loading, setLoading] = useState(false);
-  const navigate = useNavigate();
 
   // fetching tasks
   const getTasks = async () => {
