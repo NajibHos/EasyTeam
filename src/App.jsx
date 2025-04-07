@@ -1,6 +1,6 @@
+import { AuthProvider, useAuth } from './utils/AuthContext';
 import { Route, Routes } from "react-router-dom";
-import { AuthProvider, useAuth } from './context/AuthContext';
-import PrivateRoute from './components/PrivateRoute';
+import PrivateRoute from './utils/PrivateRoute';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from "./pages/Home";
