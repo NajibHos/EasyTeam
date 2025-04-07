@@ -8,7 +8,8 @@ const Header = () => {
   const { user, userRole, logout } = useAuth();
 
   return (
-    <div className='h-[15vh] w-full flex justify-center items-center'>
+    <div className='h-[10vh] md:max-2xl:h-[15vh] w-full
+     flex justify-center items-center'>
       <div className='h-full w-[80%] flex justify-between items-center'>
         <div id='Logo'>
           <h2 className='text-2xl md:max-2xl:text-3xl font-semibold
