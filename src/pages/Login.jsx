@@ -1,40 +1,24 @@
-import { Button } from "primereact/button";
 import { InputText } from "primereact/inputtext";
-import { useState } from "react";
-import LoginDetailsCard from "../components/LoginDetailsCard";
-import { useAuth } from "../context/AuthContext";
+import { useState, useEffect } from "react";
+import { useAuth } from "../utils/AuthContext";
 import { useNavigate } from 'react-router-dom';
-import { useEffect } from "react";
-
-const loginData = [
-  {
-    role: 'Admin',
-    email: 'admin@gmail.com',
-    pass: 'Pass@1234'
-  },
-  {
-    role: 'Member',
-    email: 'member@gmail.com',
-    pass: 'Pass@member'
-  }
-]
 
 const Login = () => {
 
-  const navigate = useNavigate();
   const { login, user, userRole } = useAuth();
-  const [error, setError] = useState('');
+  const navigate = useNavigate();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
 
   // navigating user on every mount
   useEffect(() => {
 
     if (user) {
       if (userRole === 'Admin') {
-        navigate('/admin/dashboard')
+        navigate('/admin/dashboard');
       } else if (userRole === 'Members') {
-        navigate('/member/dashboard')
+        navigate('/member/dashboard');
       }
     }
 
@@ -46,8 +30,8 @@ const Login = () => {
 
    let userInfo = { email, password };
 
-   try {
-      login(userInfo); // Perform login
+    try {
+      await login(userInfo); // Perform login
     } catch (err) {
       setError(err.message);
     }
@@ -60,30 +44,27 @@ const Login = () => {
 
   return (
 
-    <div className="h-[100vh] w-full flex
-     justify-center items-center">
+    <div className="h-[90vh] md:max-2xl:h-[110vh] w-full
+     flex justify-center items-center">
 
       <div className="h-full w-[80%] flex flex-col justify-center
-      items-center gap-14">
+      items-center gap-12">
 
-        <div className="h-auto w-full flex flex-col md:max-2xl:flex-row
-         justify-center items-center gap-10 md:max-2xl:gap-16">
-          {
-            loginData.map((v, i) => {
-              return <LoginDetailsCard key={i} data={v} />
-            })
-          }
+        <div className="h-16 w-16 rounded-full bg-zinc-200
+        flex justify-center items-center">
+          <i className="pi pi-sign-in text-zinc-950"
+           style={{ fontSize: '1.5rem' }}></i>
         </div>
 
         <div className="h-auto w-full text-center">
           <h2 className="text-2xl text-zinc-900 font-semibold
           font-poppins">
-            Log In
+            Sign In
           </h2>
           {error && <p style={{ color: 'red' }}>{error}</p>}
         </div>
 
-        <div className="h-auto w-full md:max-2xl:w-[60%]">
+        <div className="h-auto w-full md:max-2xl:w-[50%]">
           <form onSubmit={handleForm} className="flex flex-col
           justify-center items-start gap-8">
             <div className="w-full flex flex-col gap-2">
@@ -91,32 +72,88 @@ const Login = () => {
                className="text-zinc-800 font-poppins font-semibold">
                Email
              </label>
-             <InputText id="email" type="email" required
+             {/* <InputText id="email" type="email" required
              placeholder="example@gmail.com" value={email}
              className="w-full bg-white border-2
               font-poppins
              border-zinc-200 rounded-xl text-zinc-900"
              onChange={(ev) => {setEmail(ev.target.value)}}
-             />
+             /> */}
+              <InputText id="email" type="email" value={email}
+               placeholder="example@gmail.com" required
+              className="w-full !bg-zinc-200 border !border-zinc-200
+               !rounded !text-zinc-900 !font-semibold font-poppins"
+              onChange={(ev) => {setEmail(ev.target.value)}} />
+
+              <div className="h-auto w-full">
+                <h2 className="text-base text-zinc-400 font-semibold
+                font-display">Admin: <span className="text-zinc-900">
+                  admin@gmail.com</span></h2>
+              </div>
+              <div className="h-auto w-full">
+                <h2 className="text-base text-zinc-400 font-semibold
+                font-display">Member: <span className="text-zinc-900">
+                  member@gmail.com</span></h2>
+              </div>
             </div>
+
             <div className="w-full flex flex-col gap-2">
              <label htmlFor="pass"
                className="text-zinc-800 font-poppins font-semibold">
                Password
              </label>
-             <InputText id="pass" type="password" required
+
+             {/* <InputText id="pass" type="password" required
              placeholder="examplePass" value={password}
              className="w-full bg-white border-2
               font-poppins
              border-zinc-200 rounded-xl text-zinc-900"
              onChange={(ev) => {setPassword(ev.target.value)}}
-             />
+             /> */}
+
+             <InputText id="pass" type="password" value={password}
+               placeholder="example1232" required
+              className="w-full !bg-zinc-200 border !border-zinc-200
+               !rounded !text-zinc-900 !font-semibold font-poppins"
+              onChange={(ev) => {setPassword(ev.target.value)}} />
+
+              <div className="h-auto w-full">
+                <h2 className="text-base text-zinc-400 font-semibold
+                font-display">Admin: <span className="text-zinc-900">
+                  Pass@1234</span></h2>
+              </div>
+              <div className="h-auto w-full">
+                <h2 className="text-base text-zinc-400 font-semibold
+                font-display">Member: <span className="text-zinc-900">
+                  Pass@member</span></h2>
+              </div>
+
             </div>
-            <div className="self-center mt-6">
+
+            {/* <div className="self-center mt-6">
             <Button label="Log in" size="small" type="submit"
               icon='pi pi-sign-in'className="bg-zinc-900 text-white
               outline-0 border-0 " />
+            </div> */}
+
+            <div className="w-full h-auto mt-4">
+              <button className="w-full py-2 bg-zinc-900 text-white
+              font-semibold rounded cursor-pointer font-display text-base
+              md:max-2xl:text-lg"
+               type="submit">
+                Sign In
+              </button>
             </div>
+
+            <div className="w-full h-auto">
+              <button className="w-full py-2 bg-blue-600 text-white
+              font-semibold rounded cursor-pointer text-base
+              md:max-2xl:text-lg font-display"
+              type="button" onClick={() => navigate('/')}>
+                Cancel
+              </button>
+            </div>
+
           </form>
         </div>
 
