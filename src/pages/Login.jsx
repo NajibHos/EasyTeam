@@ -72,13 +72,7 @@ const Login = () => {
                className="text-zinc-800 font-poppins font-semibold">
                Email
              </label>
-             {/* <InputText id="email" type="email" required
-             placeholder="example@gmail.com" value={email}
-             className="w-full bg-white border-2
-              font-poppins
-             border-zinc-200 rounded-xl text-zinc-900"
-             onChange={(ev) => {setEmail(ev.target.value)}}
-             /> */}
+
               <InputText id="email" type="email" value={email}
                placeholder="example@gmail.com" required
               className="w-full !bg-zinc-200 border !border-zinc-200
@@ -103,14 +97,6 @@ const Login = () => {
                Password
              </label>
 
-             {/* <InputText id="pass" type="password" required
-             placeholder="examplePass" value={password}
-             className="w-full bg-white border-2
-              font-poppins
-             border-zinc-200 rounded-xl text-zinc-900"
-             onChange={(ev) => {setPassword(ev.target.value)}}
-             /> */}
-
              <InputText id="pass" type="password" value={password}
                placeholder="example1232" required
               className="w-full !bg-zinc-200 border !border-zinc-200
@@ -129,12 +115,6 @@ const Login = () => {
               </div>
 
             </div>
-
-            {/* <div className="self-center mt-6">
-            <Button label="Log in" size="small" type="submit"
-              icon='pi pi-sign-in'className="bg-zinc-900 text-white
-              outline-0 border-0 " />
-            </div> */}
 
             <div className="w-full h-auto mt-4">
               <button className="w-full py-2 bg-zinc-900 text-white
