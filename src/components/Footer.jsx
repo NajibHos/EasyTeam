@@ -3,7 +3,8 @@
 const Footer = () => {
 
   return (
-    <div className="h-[15vh]  w-full flex justify-center items-center">
+    <div className="h-[10vh] md:max-2xl:h-[15vh] w-full
+     flex justify-center items-center">
       <div className="w-[80%] text-center">
 
         <h2 className="text-base font-medium font-poppins
